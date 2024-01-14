@@ -1,39 +1,50 @@
-
-
 export const data = [
   {
     id: 1,
-    img: 'https://i.postimg.cc/qBKLpn6W/ecom.png',
-    title: "Phone Store (NextJs)",
-    desc: "This is an e-commerce web site built using Next JS, CSS, Materiel UI, Node js , Express for database we use the orm Sequalize. It includes search functionality.",
-    link: "",
-    git: "https://github.com/aymensaidani/ecommerceNext",
+    img: 'https://i.postimg.cc/cJW6Yz01/E-Commerce-Facebook-Ad.png',
+    title: 'Brand of clothes (React+Vite)',
+    desc: 'This is an e-commerce web site built using Vite React, CSS, Materiel UI, Bootstrap , Node js , Express for database we use the orm Sequalize. It includes search functionality.',
+    video:
+      'https://res.cloudinary.com/dgcdmrj7x/video/upload/v1705244052/vdecom_cdldly.mp4',
+    link: '',
+    git: 'https://github.com/aymensaidani/ecommerceNext',
   },
+
   {
     id: 2,
-    img: 'https://i.postimg.cc/vTzBz3D4/screencapture-localhost-3000-shop-2023-09-11-19-10-11.png',
-    title: "Cosmetic Store (ReactJs)",
-    desc: "This is an e-commerce web site built using React JS, CSS, Bootstrap, Node js , Express and for database we use the Mysql . It includes search functionality",
-    link: "",
-    git: "https://github.com/aymensaidani/RBKTN-02-23-Mvp-Starter",
+    img: 'https://i.postimg.cc/L5LSS6yq/Pr-sentation-commerciale-Lancement-de-Projet-Aspiration-et-l-gance-en-Noir-et-Blanc-meraude-et-Ver.png',
+    title: 'Mobile Application (React Native) ',
+    desc: 'This is an mobile application built using React Native, CSS, Google map, Node js , Express and for database Sequalize and payment with stripe',
+    video:
+      'https://res.cloudinary.com/dgcdmrj7x/video/upload/v1705244415/wamia_oc1cab.mp4',
+    link: '',
+    git: 'https://github.com/WamiaService/Wamia',
+  },
+  {
+    id: 3,
+    img: 'https://i.postimg.cc/wM1zSfwH/E-Commerce-Facebook-Ad.png',
+    title: 'FripoShop E-commerce Website (NextJS)',
+    desc: 'This is an e-commerce web site  built using NextJs, Tailwind CSS, firebase Node js , Express and for database Mongoose ODM and payment with strapi',
+    video: '',
+    link: '',
+    git: 'https://github.com/aymensaidani/friposhop.git',
   },
   {
     id: 4,
-    img: 'https://i.postimg.cc/L5LSS6yq/Pr-sentation-commerciale-Lancement-de-Projet-Aspiration-et-l-gance-en-Noir-et-Blanc-meraude-et-Ver.png',
-    title: "Mobile Application (React Native) ",
-    desc:  "This is an mobile application built using React Native, CSS, Google map, Node js , Express and for database Sequalize and payment with stripe",
-    link: "",
-    git: "https://github.com/WamiaService/Wamia",
+    img: 'https://i.postimg.cc/fRzMXdbx/screencapture-game-xo-eight-vercel-app-2024-01-13-15-12-45.png',
+    title: 'Game XO using js css and html',
+    desc: 'Game XO its a funny game you can play it with your friends',
+    video: '',
+    link: 'https://game-xo-eight.vercel.app/',
+    git: 'https://github.com/aymensaidani/Game-x-O',
   },
   {
     id: 5,
-    img: 'https://i.postimg.cc/wM1zSfwH/E-Commerce-Facebook-Ad.png',
-    title: "FripoShop E-commerce Website (NextJS)",
-    desc:  "This is an e-commerce web site  built using NextJs, Tailwind CSS, firebase Node js , Express and for database Mongoose ODM and payment with strapi",
-    link: "",
-    git: "https://github.com/aymensaidani/friposhop.git",
+    img: 'https://i.postimg.cc/4NjZQPFq/screencapture-127-0-0-1-5500-home-html-2024-01-13-20-28-44.png',
+    title: 'ChkobaCheck game js css and html',
+    desc: 'game for fun and for memory you should check the same card',
+    video: '',
+    link: '',
+    git: 'https://github.com/aymensaidani/Chkoba-check',
   },
-  
-
-  
 ];

@@ -23,9 +23,9 @@ const Certefica = () => {
             
             <div className=" relative">
               {/* design */}
-              <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+              <div className="design flex absolute left-[-290px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
                 <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
-                <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
+                <div className="line w-[500px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
                 <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
               </div>
               {/* design */}

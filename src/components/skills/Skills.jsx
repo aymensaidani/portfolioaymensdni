@@ -12,9 +12,12 @@ import {
   SiExpress,
   SiBootstrap,
   SiTypescript,
+
+  
   
 
 } from "react-icons/si";
+
 import { GrCode } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -47,23 +50,29 @@ const Skills = ({ darkMode }) => {
             >
               <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
                 <ProgressBar logo={<IoLogoHtml5 />} name={"HTML"} value={95} />
-                <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={80} />
+                <ProgressBar logo={<IoLogoCss3 />} name={"CSS"} value={95} />
                 <ProgressBar
                   logo={<SiJavascript />}
                   name={"Javascript"}
-                  value={90}
+                  value={95}
                 />
                 <ProgressBar
                   logo={<SiTypescript />}
                   name={"Typescript"}
-                  value={90}
+                  value={95}
                 />
-                <ProgressBar logo={<FaReact />} name={"React Js / React Native"} value={90} />
+                <ProgressBar logo={<FaReact />} name={"React Js / React Native"} value={95} />
                 <ProgressBar
                   logo={<SiBootstrap />}
                   name={"Bootstrap"}
-                  value={90}
+                  value={95}
                 />
+                <ProgressBar
+                  logo={<SiTailwindcss />}
+                  name={"TailwindCss"}
+                  value={95}
+                />
+              
                 
               </div>
             </div>

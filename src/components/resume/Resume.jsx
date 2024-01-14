@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Resume = () => {
+  
   return (
     <div id="resume" className=" container m-auto   mt-16">
       {/* heading */}
@@ -27,12 +28,43 @@ const Resume = () => {
             </legend>
             <div className=" relative">
               {/* design */}
+              <div className="design flex absolute left-[-105px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+                <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+                <div className="line w-[140px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
+                <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
+              </div>
+              {/* design */}
+              
+              <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
+                <h1 className="text-[1.4rem] font-semibold sm:text-xl">
+                Cafe Restaurant Management desktop application (VB.NET)
+                </h1>
+                <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
+                Elite training center
+                </span>
+                <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
+                  April 2022 -Jun 2022
+                </span>
+                Tasks :
+                <p className=" text-[.9rem] text-justify break-words text-gray-500">
+                a desktop IT project which will allow transparency in management
+within the restaurant thanks to the implementation of a computerized system in front of
+support data entry and printing of small and medium needs
+companies in the catering trade sectors such as: food management
+shift planning, inventory management, customer management and customer management
+orders, purchasing management and sales management.
+                </p>
+              </div>
+            </div>
+            <div className=" relative " style={{margin:"10px auto"}}>
+              {/* design */}
               <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
                 <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
                 <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
                 <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
               </div>
               {/* design */}
+              
               <div className=" flex flex-col gap-1 sm:gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   THESIS Project - WAMIA SERVICE Mobile Apllication using (react
@@ -89,11 +121,14 @@ const Resume = () => {
                 </span>
                 Tasks :
                 <p className=" text-[.9rem] text-justify break-words text-gray-500">
+                -Create database schema and enable CRUD operations.
+                <br/>
                   -Seller Management: Successfully designed and implemented a
                   comprehensive seller management system, allowing each seller
                   to have their own profile. Developed features enabling sellers
                   to add products utilizing the Cloudinary platform, update
                   product details, and delete products as needed.
+
                   <br />
                   -Product Filtering: Created advanced product filtering
                   functionality, allowing users to filter products by price
@@ -103,6 +138,7 @@ const Resume = () => {
                   payment method into the application, enabling secure and
                   efficient payment processing for users, contributing to a
                   seamless and secure e-commerce experience.
+
                 </p>
               </div>
             </div>
@@ -121,11 +157,11 @@ const Resume = () => {
             <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-yellow-500">
               Education
             </legend>
-            <div className=" relative">
+            <div className=" relative "style={{margin:"10px auto"}}>
               {/* design */}
-              <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+              <div className="design flex absolute left-[-140px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
                 <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
-                <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
+                <div className="line w-[200px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
                 <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
               </div>
               {/* design */}
@@ -155,9 +191,9 @@ const Resume = () => {
             </div>
             <div className=" relative">
               {/* design */}
-              <div className="design flex absolute left-[-150px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
+              <div className="design flex absolute left-[-100px] top-1/2 items-center rotate-[90deg] sm:left-[-160px] ">
                 <div className="c1 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
-                <div className="line w-[230px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
+                <div className="line w-[120px] bg-gray-300 h-[2px] sm:w-[250px]"></div>
                 <div className="c2 w-[12px] h-[12px] rounded-full bg-white border-2 border-yellow-500"></div>
               </div>
               {/* design */}
