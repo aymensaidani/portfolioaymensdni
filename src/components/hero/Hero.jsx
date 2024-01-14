@@ -4,7 +4,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { FiDownload } from 'react-icons/fi';
 import { FaPlay } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
-import resumePDF from '../../assets/AymenSaidani-CV.pdf';
+import resumePDF from '../../assets/AymenSaidani-Resume.pdf';
 
 const Hero = () => {
   return (
