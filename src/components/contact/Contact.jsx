@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { RiSendPlaneFill } from "react-icons/ri";
 import emailjs from "emailjs-com";
@@ -7,22 +7,49 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
 
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const validateEmail = (input) => {
+    // Basic email validation using a regular expression
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(input);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_71o2tzi", "template_nl6ezjm", e.target, "Jnd_3FYvf4gC9ECLC")
-    .then((result) => {
+    if (!email || !name || !message) {
+      // Show toast message if any of the fields are empty
+      toast.error("Please fill in all fields");
+      return;
+    }
+
+    if (!validateEmail(email)) {
+      // Show toast message if email format is invalid
+      toast.error("Please enter a valid email address");
+      return;
+    }
+
+    // You can add additional server-side email validation here if needed
+
+    emailjs
+      .sendForm("service_71o2tzi", "template_nl6ezjm", e.target, "Jnd_3FYvf4gC9ECLC")
+      .then((result) => {
         console.log("Email sent successfully:", result.text);
-        toast.success("Email sent successfully!")
+        toast.success("Email sent successfully!");
       })
       .catch((error) => {
         console.error("Email could not be sent:", error);
+        toast.error("Error sending email. Please try again later.");
       });
 
     // Clear the form fields after sending
-    e.target.reset();
+    setEmail("");
+    setName("");
+    setMessage("");
   };
-
 
   return (
     <div id="contact" className="container m-auto mt-16">
@@ -61,42 +88,45 @@ const Contact = () => {
           </div>
         </div>
         <div className="right flex-1">
-          <form
-          onSubmit={sendEmail}
-            
-            data-aos="zoom-in"
-            
-            className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
-            action="mailto:xyz@gmail.com"
-          >
-            <input
-              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
-              type="email"
-              placeholder="e.g. example@email.com"
-              name="user_email"
-            />
-            <input
-              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
-              type="text"
-              placeholder="e.g. Aymen Saidani"
-              name="from_name"
-            />
-            <textarea
-              className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
-              rows="4"
-              cols="50"
-              placeholder="Write your message"
-              name="message"
-              id=""
-            />
-            <button
-              className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
-              type="submit"
-            >
-              <span>Send</span>
-              <RiSendPlaneFill/>
-            </button>
-          </form>
+        <form
+        onSubmit={sendEmail}
+        data-aos="zoom-in"
+        className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
+        action="mailto:xyz@gmail.com"
+      >
+        <input
+          className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+          type="email"
+          placeholder="e.g. example@email.com"
+          name="user_email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+          type="text"
+          placeholder="e.g. Aymen Saidani"
+          name="from_name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <textarea
+          className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
+          rows="4"
+          cols="50"
+          placeholder="Write your message"
+          name="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+        <button
+          className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
+          type="submit"
+        >
+          <span>Send</span>
+          <RiSendPlaneFill />
+        </button>
+      </form>
           <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar={false} />
 
         </div>

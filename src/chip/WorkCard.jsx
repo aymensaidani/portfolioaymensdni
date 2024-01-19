@@ -64,7 +64,7 @@ const WorkCard = () => {
                     className="mt-3 rounded-md shadow-md p-1 px-2 flex gap-2 items-center justify-center font-medium"
                   >
                   <AiOutlineEye  className="text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
-                  <p className="text-black">View</p>
+                  <p className="text-black">Demo</p>
                   </button>
         
                 </div>
