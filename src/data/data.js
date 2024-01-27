@@ -1,5 +1,25 @@
 export const data = [
   {
+    id: 2,
+    img: 'https://i.postimg.cc/7hLnZrP9/E-Commerce-Facebook-Ad-1.png',
+    title: 'Wash Car website (React js)',
+    desc: 'wash car fullstack project you can reserve online to wash your car built using React js and tailwind Css nodejs express mysql socketio jwt',
+    video: 'https://res.cloudinary.com/dgcdmrj7x/video/upload/v1706364680/0127_1_z7pzzs.mp4',
+    link: '',
+    git: 'https://github.com/aymensaidani/washCar',
+  },
+  
+  {
+    id: 7,
+    img: 'https://i.postimg.cc/SNjfz2bj/Creative-and-Minimal-Portfolio-Presentation.png',
+    title: 'Mobile Application (React Native) ',
+    desc: 'This is an mobile application built using React Native, CSS, Google map, Node js , Express and for database Sequalize and payment with stripe',
+    video:
+      'https://res.cloudinary.com/dgcdmrj7x/video/upload/v1705244415/wamia_oc1cab.mp4',
+    link: '',
+    git: 'https://github.com/WamiaService/Wamia',
+  },
+  {
     id: 1,
     img: 'https://i.postimg.cc/RC3KGrqZ/dv.jpg',
     title: 'Cafe Restaurant desktop application (VB.NET)',
@@ -9,16 +29,8 @@ export const data = [
     link: '',
     git: '',
   },
-  {
-    id: 2,
-    img: 'https://i.postimg.cc/SNjfz2bj/Creative-and-Minimal-Portfolio-Presentation.png',
-    title: 'Mobile Application (React Native) ',
-    desc: 'This is an mobile application built using React Native, CSS, Google map, Node js , Express and for database Sequalize and payment with stripe',
-    video:
-      'https://res.cloudinary.com/dgcdmrj7x/video/upload/v1705244415/wamia_oc1cab.mp4',
-    link: '',
-    git: 'https://github.com/WamiaService/Wamia',
-  },
+ 
+ 
   {
     id: 3,
     img: 'https://i.postimg.cc/cJW6Yz01/E-Commerce-Facebook-Ad.png',
@@ -58,4 +70,6 @@ export const data = [
     link: '',
     git: 'https://github.com/aymensaidani/Chkoba-check',
   },
+  
+  
 ];
